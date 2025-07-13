@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>A. & O. Gaudencio Orso</title>
   <meta name="author" content="A. & O. Gaudencio Orso" />
+  <meta name="description" content="Joias artesanais em Ouro 18K, Prata Britannia e Gemas Naturais. Atendimento personalizado com hora marcada em Porto Alegre. Agende sua visita pelo WhatsApp.">
   <meta property="og:site_name" content="A. & O. Gaudencio Orso" />
   <meta property="og:title" content="A. & O. Gaudencio Orso" />
   <meta property="og:description" content="✨Agende sua visita! Atendimento somente com hora marcada.✨" />
@@ -13,34 +14,92 @@
   <meta name="theme-color" content="#ffd700" />
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
       background-color: #fffaf2;
       color: #333;
       text-align: center;
-      padding: 40px 20px;
+      padding-top: 80px;
     }
+
+    /* Cabeçalho fixo */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 70px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      z-index: 1000;
+    }
+
+    header img.logo {
+      height: 50px;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
+      font-size: 3em;
+      margin-bottom: 0.3em;
       color: #333;
     }
+
     p {
       font-family: 'Roboto', sans-serif;
       font-size: 1.2em;
       line-height: 1.6;
-      max-width: 600px;
+      max-width: 700px;
       margin: 0 auto 1.5em;
     }
+
     img.hero {
       max-width: 100%;
       height: auto;
       margin: 20px 0;
       border-radius: 12px;
     }
-     .whatsapp-float {
+
+    .cta-button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 20px auto;
+      background-color: #ffd700;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.1em;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #e6c200;
+    }
+
+    .whatsapp-float {
       position: fixed;
       bottom: 20px;
       right: 20px;
@@ -59,26 +118,49 @@
       width: 32px;
       height: 32px;
     }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #777;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Cabeçalho com logotipo e menu -->
+  <header>
+    <img src="https://via.placeholder.com/140x50?text=LOGO" alt="Logotipo" class="logo" />
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Joias</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
   <h1>A. & O. Gaudencio Orso</h1>
-  <p>✨ Agende sua visita! Atendimento somente com hora marcada. ✨</p>
+  <p style="font-size: 1.4em; color: #555;">Joalheria artesanal. Atendimento exclusivo, com hora marcada.</p>
+
   <img class="hero" src="https://img1.wsimg.com/isteam/ip/ff094da8-9256-442a-909a-7f06bc56313c/jewelry-repair-near-me.jpg" alt="Imagem joalheria" />
-  <p>Joalheria artesanal com atendimento personalizado.<br />
-     Qualidade, discrição e excelência em Porto Alegre.<br />
-    <br />
-  Há mais de 30 anos no mercado joalheiro, trabalhamos com criação, desenvolvimento e 
-    produção de joias personalizadas em Ouro 18K, Prata Britannia (958) e Gemas Naturais, 
-    sempre de acordo com os desejos e necessidades de nossos clientes, com toda qualidade, 
-    profissionalismo, discrição e excelência que eles merecem.  <br />
-    <br />
-Entre em contato pelo Whatsapp e agende sua visita  
-  ao nosso ateliê para um melhor atendimento!</p>
+
+  <p>
+    Há mais de 30 anos no mercado joalheiro, oferecemos criação e produção artesanal de joias personalizadas em Ouro 18K, Prata Britannia (958) e Gemas Naturais. <br /><br />
+    Nosso atendimento é exclusivo, com hora marcada, garantindo discrição, qualidade e excelência em cada etapa do processo. <br /><br />
+    Agende sua visita pelo WhatsApp e conheça de perto o ateliê A. & O. Gaudencio Orso, em Porto Alegre.
+  </p>
+
+  <a href="https://wa.me/5551992619386" target="_blank" class="cta-button">✨ Agendar visita via WhatsApp</a>
+
   <!-- Botão flutuante do WhatsApp -->
- <!-- Botão flutuante do WhatsApp -->
- <a class="whatsapp-float" href="https://wa.me/5551992619386" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 32px; height: 32px;">
-</a>
+  <a class="whatsapp-float" href="https://wa.me/5551992619386" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+  <!-- Rodapé -->
+  <footer>
+    © 2025 A. & O. Gaudencio Orso · Joalheria artesanal em Porto Alegre · CNPJ sob consulta
+  </footer>
+
 </body>
 </html>
