@@ -125,6 +125,19 @@
       font-size: 0.9em;
       color: #777;
     }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
   </style>
 </head>
 <body>
