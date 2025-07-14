@@ -2,23 +2,22 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="logo27.png" type="image/png">
   <title>A. & O. Gaudencio Orso</title>
-  <meta name="author" content="A. & O. Gaudencio Orso" />
   <meta name="description" content="Joias artesanais em Ouro 18K, Prata Britannia e Gemas Naturais. Atendimento personalizado com hora marcada em Porto Alegre. Agende sua visita pelo WhatsApp.">
-  <meta property="og:site_name" content="A. & O. Gaudencio Orso" />
-  <meta property="og:title" content="A. & O. Gaudencio Orso" />
-  <meta property="og:description" content="✨Agende sua visita! Atendimento somente com hora marcada.✨" />
   <meta property="og:image" content="https://img1.wsimg.com/isteam/ip/ff094da8-9256-442a-909a-7f06bc56313c/jewelry-repair-near-me.jpg" />
   <meta name="theme-color" content="#ffd700" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
 
   <style>
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -30,7 +29,6 @@
       padding-top: 80px;
     }
 
-    /* Cabeçalho fixo */
     header {
       position: fixed;
       top: 0;
@@ -69,17 +67,10 @@
 
     p {
       font-family: 'Roboto', sans-serif;
-      font-size: 1.2em;
+      font-size: 1em;
       line-height: 1.6;
-      max-width: 700px;
+      max-width: 640px;
       margin: 0 auto 1.5em;
-    }
-
-    img.hero {
-      max-width: 100%;
-      height: auto;
-      margin: 20px 0;
-      border-radius: 12px;
     }
 
     .cta-button {
@@ -97,6 +88,68 @@
     }
 
     .cta-button:hover {
+      background-color: #e6c200;
+    }
+
+    img.hero {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 12px;
+    }
+
+    section {
+      margin: 60px auto;
+      max-width: 1100px;
+      padding: 0 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    input, textarea {
+      padding: 12px;
+      font-size: 1em;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    button[type="submit"] {
+      background-color: #ffd700;
+      color: #333;
+      font-weight: bold;
+      border: none;
+      padding: 12px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
       background-color: #e6c200;
     }
 
@@ -142,38 +195,50 @@
 </head>
 <body>
 
-  <!-- Cabeçalho com logotipo e menu -->
   <header>
     <img src="logo26.png" alt="Logotipo" class="logo" />
     <nav>
       <a href="index.html">Início</a>
       <a href="galeria.html">Joias</a>
-      <a href="#">Sobre</a>
-      <a href="#">Contato</a>
+      <a href="#contato">Contato</a>
     </nav>
   </header>
 
-  <h1>A. & O. Gaudencio Orso</h1>
-  <p style="font-size: 1.4em; color: #555;">Joalheria artesanal. Atendimento exclusivo, com hora marcada.</p>
-  
- <a href="https://wa.me/5551992619386" target="_blank" class="cta-button">✨Agendar visita via WhatsApp</a>
-  
-  <img class="hero" src="https://img1.wsimg.com/isteam/ip/ff094da8-9256-442a-909a-7f06bc56313c/jewelry-repair-near-me.jpg" alt="Imagem joalheria" />
+  <section id="sobre" class="fade-in">
+    <h1>A. & O. Gaudencio Orso</h1>
+    <p style="font-size: 1.4em; color: #555;">Joalheria artesanal. Atendimento exclusivo, com hora marcada.</p>
+    <img class="hero" src="https://img1.wsimg.com/isteam/ip/ff094da8-9256-442a-909a-7f06bc56313c/jewelry-repair-near-me.jpg" alt="Imagem joalheria" />
+    <p>
+      Há mais de 30 anos no mercado joalheiro, oferecemos criação e produção artesanal de joias personalizadas em Ouro 18K, Prata Britannia (958) e Gemas Naturais. <br /><br />
+      Nosso atendimento é exclusivo, com hora marcada, garantindo discrição, qualidade e excelência em cada etapa do processo. <br /><br />
+      Agende sua visita pelo WhatsApp e conheça de perto o ateliê A. & O. Gaudencio Orso, em Porto Alegre.
+    </p>
+    <a href="https://wa.me/5551992619386" target="_blank" class="cta-button">✨ Agendar visita via WhatsApp</a>
+  </section>
 
-  <p>
-    Há mais de 30 anos no mercado joalheiro, oferecemos criação e produção artesanal de joias personalizadas em Ouro 18K, Prata Britannia (958) e Gemas Naturais. <br /><br />
-    Nosso atendimento é exclusivo, com hora marcada, garantindo discrição, qualidade e excelência em cada etapa do processo. <br /><br />
-    Agende sua visita pelo WhatsApp e conheça de perto o ateliê A. & O. Gaudencio Orso, em Porto Alegre.
-  </p>
-<a href="https://wa.me/5551992619386" target="_blank" class="cta-button">✨Agendar visita via WhatsApp</a>
+  <section id="galeria" class="fade-in">
+    <h2>Algumas de nossas joias</h2>
+    <div class="gallery">
+      <img src="402707_314726928580164_504772879_n.jpg" alt="Joia 1">
+      <img src="DSCN3937.jpg" alt="Joia 2">
+      <img src="DSCN5985edit.jpg" alt="Joia 3">
+    </div>
+  </section>
 
+  <section id="contato" class="fade-in">
+    <h2>Entre em contato</h2>
+    <form action="mailto:joalheria@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+      <button type="submit">Enviar mensagem</button>
+    </form>
+  </section>
 
-  <!-- Botão flutuante do WhatsApp -->
   <a class="whatsapp-float" href="https://wa.me/5551992619386" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 
-  <!-- Rodapé -->
   <footer>
     © 2025 A. & O. Gaudencio Orso · Joalheria artesanal em Porto Alegre · CNPJ sob consulta
   </footer>
